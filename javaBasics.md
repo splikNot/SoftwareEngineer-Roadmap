@@ -17,7 +17,7 @@ Uma váriavel possuí:
 
 **Tipos Primitivos:** Armazenam informação (valores) diretamente na memória.
 
-|  Tipo | Bits | Descrição      |     Alcance      |
+|  **Tipo** | **Bits** | **Descrição**      |     **Alcance**      |
 |:-----:|:----:|:---------------|:----------------:|
 | byte  | 8  | Valores Inteiros | -128 a 127       |
 | short | 16 | Valores Inteiros | -2¹⁶ a (2¹⁶ - 1) |
@@ -30,7 +30,7 @@ Uma váriavel possuí:
 
 **Tipos de Referência:** Armazenam referências a objetos na memória (**Heap Memory**).
 
-|  Tipo      | Exemplo                     |
+|  **Tipo**  | **Exemplo**                 |
 |:----------:|:----------------------------|
 | Strings    | ```String nome = "Java";``` |
 | Arrays     | ```int[] numerical = {1,2,3,4};``` |
@@ -56,27 +56,46 @@ System.out.printf(outputData) # Permite aplicar máscara para números flutuante
 
 **Especificadores de Tipo**(*Place Holder*)
 
-|  Máscara | Descrição                 | Exemplo (System.out.printf(outputData))   | Output           |
+|  **Máscara** | **Descrição**         | **Exemplo** *(System.out.printf(outputData))*   | **Output**           |
 |:--------:|:--------------------------|:-----------------------------------------:|:-----------------|
 | ```%d``` | Números inteiros decimais | ```System.out.printf("%d", 37);```        | ```37```         | 
 | ```%f``` | Números reais decimais    | ```System.out.printf("%.2f", 3.14159);``` | ```3.14```       | 
 | ```%e``` | Notação científica        | ```System.out.printf("%e", 12345.6789);```| ```1.2345678e+04``` | 
 | ```%g``` | Notação mais compacta (%e ou %f) |```System.out.printf("%g", 12345.6789);```| ```12345.7``` | 
 | ```%c``` | Caractere Unicode         | ```System.out.printf("%c", A);```         | ```A```          | 
-| ```%s``` | String                    | ```System.out.printf("%s", "Romeo);```    | ```Romeo```      | 
+| ```%s``` | String                    | ```System.out.printf("%s", "Romeo");```    | ```Romeo```      | 
 | ```%b``` | Boolean                   | ```System.out.printf("%b", true);```      | ```true```       | 
 | ```%o``` | Inteiro em Octal (2⁸)     | ```System.out.printf("%o", 10);```        | ```12```         | 
 | ```%x``` | Inteiro em Hexadecimal    | ```System.out.printf("%x", 255);```       | ```ff```         | 
 | ```%n``` | Quebra de linha (*\n*)    | ```System.out.printf("Olá%nMundo");```    | ```Olá``` ```Mundo```| 
 
+
 **Modificadores de Formato**
 
+|  Máscara | Descrição                             | Exemplo (System.out.printf(outputData))      | Output             |
+|:----------:|:------------------------------------|:--------------------------------------------:|:-------------------|
+| ```%Xn```  | Largura Mínima (espaços à esquerda) | ```System.out.printf("\|%10s\|", "Java");``` | ```\|    Java\|``` | 
+| ```%05d``` | Preenche a largura definida com zeros à esquerda | ```System.out.printf("%05d", 3.14);``` | ```003.14```| 
+| ```%-nX``` | Alinhamento à direita        | ```System.out.printf("\|%-10s"\|, "Java");```       | ```\|Java     \|```| 
+| ```%.nf``` | Nº de Casas decimais         | ```System.out.printf("%.2f", 12345.6789);```        | ```12345.68```     | 
+| ```%,d```  | Separador de Milhares        | ```System.out.printf("%,d", 1000000000);```         | ```1.000.000.000```| 
+| ```%+d```  | Sinal Explicito              | ```System.out.printf("%+d", 37);```                 | ```+37```          | 
+| ```%#X```  | Adiciona prefixo em octais e hexadecimais | ```System.out.printf("%b", true);```   | ```true```         | 
+
+**Obs:** É possivel juntar diversos modificadores para criar formatos personalizados.
+```
+// Para usar o separador no padrão americano
+
+import java.util.Locale;
+Locale.setDefault(Locale.US);
+
+```
 
 
 # Dúvidas
 
 * Consigo usar a máscara boolean com valor 1 ou 0?
-* 
+*
 
 
 
