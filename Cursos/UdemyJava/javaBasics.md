@@ -224,7 +224,7 @@ Existem várias formas de iniciar o Scanner. Essa variadade é para controlar os
 | ```Math.E```   | 2,71828 |
 
 
-## Estrutura Condicional
+## Operadores Matemáticos
 
 ### Operadores Comparativos
 
