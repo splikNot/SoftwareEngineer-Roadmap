@@ -410,6 +410,19 @@ for (int i = 3; i > 0; i--); {
 }
 ```
 
+Uma variação interessante é o laço ```for each```, permite acessar as informações contidas em estruturas ordenadas/array de maneira simplificada.
+
+**Sintaxe**
+```
+for (Class varName : array){
+   System.out.println(obj);
+}
+
+//O que geralmente seria feito com
+for (int i=0 ; i<array.length ; i++){
+   System.out.println(array[i])
+```
+
 ### *do-while*
 Estrutura interessante pois garante que os comandos serão executados ao menos uma vez, antes de verificar a condição de repetição.
 **Sintaxe**
