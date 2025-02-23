@@ -412,6 +412,26 @@ for (int i = 3; i > 0; i--); {
 }
 ```
 
+Uma sintaxe interessante do for é o ```for each``` onde é possível acessar dados de conjuntos de maneira mais simples.
+
+```
+//Ao inves de fazermos
+for (int i=0 ; i < vect.length ; i++) {
+   System.out.println(vect[i]);
+}
+
+//Podemos fazer
+for (int i : vector) {
+   System.out.println(i);
+}
+
+//Generalizando a sintaxe
+for (Class obj : array) {
+   System.out.println(obj);
+}
+
+```
+
 ### *do-while*
 Estrutura interessante pois garante que os comandos serão executados ao menos uma vez, antes de verificar a condição de repetição.
 **Sintaxe**
