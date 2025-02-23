@@ -1,10 +1,10 @@
 package util;
-import java.util.Locale;
+//import java.util.Locale;
 
-// no static
+
 public class CurrencyConverter {
 
-	static { Locale.setDefault(Locale.US); } 
+	//static { Locale.setDefault(Locale.US); } 
 	
 	public static double tax = (6.0/100);
 	
