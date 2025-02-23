@@ -13,6 +13,7 @@ Uma váriavel possuí:
     * Valor;
     * Endereço de Memória;
 
+
 ### Tipos de Variáveis
 
 **Tipos Primitivos:** Armazenam informação (valores) diretamente na memória.
@@ -41,6 +42,7 @@ Uma váriavel possuí:
 **Obs:** O valor padrão de cada tipo primitivo de váriaveis são seus respectivos elementos neutros.
 
 **Obs:** Variáveis possuem escopo de acordo com a estrutura que ela seja iniciada.
+
 
 ## Saída de Dados
 
@@ -148,7 +150,7 @@ Existem várias formas de iniciar o Scanner. Essa variadade é para controlar os
 
 | **Operadores**       | **Expressão**                     |
 |:--------------------:|:----------------------------------|
-| ```=```  | Atribuição;     |
+| ```=```  | ```Atribuição```|
 | ```+=``` | ```x = x + 5``` |
 | ```-=``` | ```x = x - 5``` |
 | ```*=``` | ```x = x * 5``` |
@@ -408,19 +410,6 @@ for (inicio; condição; incremento) {
 for (int i = 3; i > 0; i--); {
     System.out.printf("%d!",i);
 }
-```
-
-Uma variação interessante é o laço ```for each```, permite acessar as informações contidas em estruturas ordenadas/array de maneira simplificada.
-
-**Sintaxe**
-```
-for (Class varName : array){
-   System.out.println(obj);
-}
-
-//O que geralmente seria feito com
-for (int i=0 ; i<array.length ; i++){
-   System.out.println(array[i])
 ```
 
 ### *do-while*
