@@ -184,13 +184,25 @@ Integer result = list.stream().filter(x -> x > 4).findFirst().orElse(null));
 ```
 
 ### Matrizes
-Matrizes são arrays bidimensionais. Ou arrays de vetores.
+Matrizes são arrays bidimensionais. Ou vetores de vetores.
+Pela sua construção, matrizes não possuem atributos e métodos próprios. Mas podem ser aplicados à suas linhas todos os métodos disponíveis para
+se trabalhar com arrays.
 
 **Características:**
 
 * Homogênea
 * Ordenada
 * Alocada uma única vez, em um único bloco contíguo de memória;
+
+**Sintaxe**
+
+```
+// Matrix NxM
+int[][] matrix = new int[n][m];
+
+// Generalizando
+Class[][] matrix = new Class[rows][columns];
+```
 
 ## Wrapper Classes
 
@@ -217,3 +229,4 @@ int num = obj;
 ```
 
 # Duvidas
+
