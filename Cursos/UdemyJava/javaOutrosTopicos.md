@@ -86,7 +86,7 @@ LocalDate menosCincoDias = data.minusDays(5);
 // Calculando Diferenças de tempo
 import java.time.temporal.ChronoUnit;
 
-//Entre Minutos
+// Entre Minutos
 LocalTime inicio = LocalTime.of(9, 30); //(hora,minutos)
 LocalTime fim = LocalTime.of(12, 15);
 long = diferencaMinutos = ChronoUnit.MINUTES.between(inicio, fim);
