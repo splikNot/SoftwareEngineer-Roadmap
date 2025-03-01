@@ -227,6 +227,3 @@ Processo inverso. Converte do tipo referência para tipo valor;
 Integer obg = 37;
 int num = obj;
 ```
-
-# Duvidas
-
