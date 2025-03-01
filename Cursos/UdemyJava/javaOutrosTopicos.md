@@ -1,5 +1,7 @@
 # Outros tópicos
 
+## Diagramas UML
+
 ## Data e hora
 
 ```É UMA BOA PRÁTICA ARMAZENAR UTCs PARA EXIBIR EM DIFERENTES REGIÕES```
@@ -86,7 +88,7 @@ LocalDate menosCincoDias = data.minusDays(5);
 // Calculando Diferenças de tempo
 import java.time.temporal.ChronoUnit;
 
-// Entre Minutos
+//Entre Minutos
 LocalTime inicio = LocalTime.of(9, 30); //(hora,minutos)
 LocalTime fim = LocalTime.of(12, 15);
 long = diferencaMinutos = ChronoUnit.MINUTES.between(inicio, fim);
@@ -99,7 +101,52 @@ Period periodo = Period.between(data1,data2);
 System.out.println("Diferença: " + periodo.getYears() + "anos, " + periodo.getMonths() + "meses, " + periodo.getDays() + "dias.");
 ```
 
+## Enumerações
 
+Tipo especial (Classes são um tipos especiais)- que serve para representar um conjunto fixo constantes nomeadas. Desta forma melhorando a semântica e deixando o código mais legível.
+
+Por exemplo, um pedido na internet passa pelos processos: ```Aguardar Pagamento``` **-->** ```Processar o pedido``` **-->** ```Despachar``` **-->** ```Entregar```.
+
+A sintaxe dos tipos especiais ```enum```:
+
+```
+package entities.enum;
+
+public enum OrderStatus {
+
+// Ciclos de vida
+    PENDING_PAYMENT,
+    PROCESSING,
+    SHIPPED.
+    DELIVERED;
+
+}
+
+```
+E então na classe podemos passar os tipos enumerados
+
+```
+import entities.enums.OrderStatus;
+import java.util.Date;
+
+public class Order {
+
+    private Integer id;
+    private Date moment;
+    private OrderStatus status;
+
+    public Order(Integer id, Date moment, OrderStatus status){
+        this.id = id;
+        this.moment = moment;
+        this.status = status;
+    }
+}
+```
+
+## Referência
+* https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html
+* https://pt.wikipedia.org/wiki/ISO_8601
+* 
 
 
 
